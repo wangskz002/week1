@@ -1,0 +1,6 @@
+com\bw\controller\CinemaController.class
+com\bw\mapper\CinemaMapper.class
+com\bw\service\CinemaServiceImpl.class
+com\bw\entity\Cinema.class
+com\bw\service\CinemaService.class
+com\bw\utils\FileUtils.class

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bw.mapper.CinemaMapper">
+    <select id="list" parameterType="map" resultType="com.bw.entity.Cinema">
+        select  * from cinema
+    </select>
+
+    <update id="updateStatus" parameterType="int">
+        update cinema set status = not status where id = #{value}
+    </update>
+
+    <update id="update" parameterType="string">
+             update cinema set  picture = #{0} where id = 2
+    </update>
+</mapper>
